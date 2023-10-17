@@ -1,0 +1,28 @@
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "julia"
+   Try: "module spider julia" to see how to load the module(s).
+
+
+
+Broadcast: MPI builtin
+number of ranks        =       64
+walltime               =     2.15 sec
+size of the vector     =     2.15 GB
+send and recv messages =   270.58 GB
+bandwidth              =   125.66 GB/s
+
+Broadcast: binary tree
+number of ranks        =       64
+walltime               =     6.39 sec
+size of the vector     =     2.15 GB
+send and recv messages =   270.58 GB
+bandwidth              =    42.36 GB/s
+
+Broadcast: sequential (naive)
+number of ranks        =       64
+walltime               =    16.59 sec
+size of the vector     =     2.15 GB
+send and recv messages =   270.58 GB
+bandwidth              =    16.31 GB/s
+

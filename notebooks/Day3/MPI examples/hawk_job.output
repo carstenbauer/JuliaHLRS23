@@ -1,0 +1,37 @@
+Running 1_mpi_hello.jl
+Hello world, I am rank 2 of 5
+Hello world, I am rank 4 of 5
+Hello world, I am rank 3 of 5
+Hello world, I am rank 0 of 5
+Hello world, I am rank 1 of 5
+Running 2_mpi_basic_communication.jl
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+[3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+[4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+Running 3_mpi_wtime.jl
+  0.000110 seconds (5 allocations: 144 bytes)
+  1.002147 seconds (5 allocations: 144 bytes)
+  2.003121 seconds (5 allocations: 144 bytes)
+  3.004156 seconds (5 allocations: 144 bytes)
+  4.005137 seconds (5 allocations: 144 bytes)
+Elapsed MPI Wtime: 4.117690086364746
+Elapsed MPI Wtime: 4.1179890632629395
+Elapsed MPI Wtime: 4.117756128311157
+Elapsed MPI Wtime: 4.1178319454193115
+Elapsed MPI Wtime: 4.117579936981201
+Running 4_mpi_reduction.jl
+local_heads_count = 5
+local_heads_count = 4
+local_heads_count = 5
+local_heads_count = 2
+local_heads_count = 4
+Total sum: 20
+Running 5_mpi_custom.jl
+local_result = MyType(0.0f0, 0, [0, 0])
+local_result = MyType(20.0f0, 20, [20, 20])
+local_result = local_result = MyType(30.0f0, 30, [30, 30])
+MyType(10.0f0, 10, [10, 10])
+local_result = MyType(40.0f0, 40, [40, 40])
+Total result: MyType(100.0f0, 100, [100, 100])

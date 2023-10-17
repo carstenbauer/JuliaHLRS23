@@ -1,0 +1,16 @@
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "julia"
+   Try: "module spider julia" to see how to load the module(s).
+
+
+
+┌─────────────┬─────────┬─────────┬───────────┐
+│     Variant │ Runtime │   FLOPS │ Bandwidth │
+│             │      ms │ GFLOP/s │      GB/s │
+├─────────────┼─────────┼─────────┼───────────┤
+│   Broadcast │  4.9295 │ 207.729 │   1246.37 │
+│ CUDA kernel │  4.5226 │ 226.419 │   1358.51 │
+│      CUBLAS │ 4.50542 │ 227.282 │   1363.69 │
+└─────────────┴─────────┴─────────┴───────────┘
+Theoretical Memory Bandwidth of NVIDIA A100: 1555 GB/s

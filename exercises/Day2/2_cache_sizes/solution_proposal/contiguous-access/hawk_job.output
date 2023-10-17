@@ -1,0 +1,43 @@
+finished n = 32, time: 5.043816208839416e-9 sec bandwidth: 203.0208789537997 GB/s
+finished n = 64, time: 9.754841268062592e-9 sec bandwidth: 209.94703488463355 GB/s
+finished n = 96, time: 1.4483313739299775e-8 sec bandwidth: 212.10615576629237 GB/s
+finished n = 128, time: 1.921429133415222e-8 sec bandwidth: 213.17465883946562 GB/s
+finished n = 192, time: 2.8684646606445314e-8 sec bandwidth: 214.19123910766504 GB/s
+finished n = 288, time: 4.289720755815506e-8 sec bandwidth: 214.83915911090523 GB/s
+finished n = 384, time: 5.7052867293357846e-8 sec bandwidth: 215.37918395611615 GB/s
+finished n = 544, time: 8.070841312408448e-8 sec bandwidth: 215.69002940543777 GB/s
+finished n = 736, time: 1.0910676819086075e-7 sec bandwidth: 215.86195238411267 GB/s
+finished n = 1024, time: 1.5179983454942702e-7 sec bandwidth: 215.8632128767606 GB/s
+finished n = 1536, time: 3.011656494140625e-7 sec bandwidth: 163.20586393444418 GB/s
+finished n = 1984, time: 4.4772601318359375e-7 sec bandwidth: 141.8010080508014 GB/s
+finished n = 2560, time: 5.751118774414062e-7 sec bandwidth: 142.44185038300867 GB/s
+finished n = 3328, time: 7.46612548828125e-7 sec bandwidth: 142.6389097894952 GB/s
+finished n = 4352, time: 9.716365356445313e-7 sec bandwidth: 143.3293159438676 GB/s
+finished n = 5696, time: 1.2660484619140624e-6 sec bandwidth: 143.96921246160983 GB/s
+finished n = 7424, time: 1.65037158203125e-6 sec bandwidth: 143.94818875129033 GB/s
+finished n = 9664, time: 2.147441711425781e-6 sec bandwidth: 144.0076339928578 GB/s
+finished n = 12544, time: 2.7858967895507815e-6 sec bandwidth: 144.08573982553244 GB/s
+finished n = 16384, time: 3.839156311035156e-6 sec bandwidth: 136.5633377554861 GB/s
+finished n = 24576, time: 6.438537109375e-6 sec bandwidth: 122.1445161595629 GB/s
+finished n = 34432, time: 9.3506083984375e-6 sec bandwidth: 117.83447162476791 GB/s
+finished n = 48512, time: 1.388774609375e-5 sec bandwidth: 111.78084546769115 GB/s
+finished n = 68096, time: 1.923495703125e-5 sec bandwidth: 113.28707396953261 GB/s
+finished n = 95744, time: 2.675775390625e-5 sec bandwidth: 114.50168839785782 GB/s
+finished n = 134528, time: 3.94833173828125e-5 sec bandwidth: 109.03075742753992 GB/s
+finished n = 188928, time: 5.9255923828125e-5 sec bandwidth: 102.02686262281333 GB/s
+finished n = 265472, time: 7.8296646484375e-5 sec bandwidth: 108.49895086752274 GB/s
+finished n = 373120, time: 0.0001084941728515625 sec bandwidth: 110.05051871620445 GB/s
+finished n = 524288, time: 0.00015808603125 sec bandwidth: 106.12712500491723 GB/s
+finished n = 786432, time: 0.000469738625 sec bandwidth: 53.5740998518059 GB/s
+finished n = 1217600, time: 0.0012701633125 sec bandwidth: 30.675740368622876 GB/s
+finished n = 1885312, time: 0.001967789 sec bandwidth: 30.658766768185004 GB/s
+finished n = 2919104, time: 0.003045360625 sec bandwidth: 30.673322309734665 GB/s
+finished n = 4519808, time: 0.0046807765625 sec bandwidth: 30.89954285763881 GB/s
+finished n = 6998208, time: 0.007290179375 sec bandwidth: 30.71840135620806 GB/s
+finished n = 10835584, time: 0.011273654125 sec bandwidth: 30.756548334322794 GB/s
+finished n = 16777216, time: 0.0174741959375 sec bandwidth: 30.723640384955484 GB/s
+Max. L1 bandwidth:	215.86 GB/s
+Max. L2 bandwidth:	163.21 GB/s
+Max. L3 bandwidth:	122.14 GB/s
+Max. Memory bandwidth:	53.57 GB/s
+376.694076 seconds (2.85 M allocations: 1.247 GiB, 11.67% gc time, 0.66% compilation time: 2% of which was recompilation)

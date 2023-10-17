@@ -1,0 +1,140 @@
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "julia"
+   Try: "module spider julia" to see how to load the module(s).
+
+
+
+dMMM_naive: 60.450267951 sec, performance = 0.28 GFLOPS
+
+dMMM_contiguous: 3.3106531795 sec, performance = 5.19 GFLOPS
+
+dMMM_cache_block (4, 4, 4): 24.216967524 sec, performance = 0.71 GFLOPS
+
+dMMM_cache_block (4, 128, 4): 2.921278432 sec, performance = 5.88 GFLOPS
+
+dMMM_cache_block (4, 256, 4): 2.298958405 sec, performance = 7.47 GFLOPS
+
+dMMM_cache_block (4, 512, 4): 2.017041034 sec, performance = 8.52 GFLOPS
+
+dMMM_cache_block (4, 4, 8): 22.658908639 sec, performance = 0.76 GFLOPS
+
+dMMM_cache_block (4, 128, 8): 2.753769396 sec, performance = 6.24 GFLOPS
+
+dMMM_cache_block (4, 256, 8): 2.2208700285 sec, performance = 7.74 GFLOPS
+
+dMMM_cache_block (4, 512, 8): 1.94258741 sec, performance = 8.84 GFLOPS
+
+dMMM_cache_block (4, 4, 16): 19.325582639 sec, performance = 0.89 GFLOPS
+
+dMMM_cache_block (4, 128, 16): 2.568036385 sec, performance = 6.69 GFLOPS
+
+dMMM_cache_block (4, 256, 16): 2.205025133 sec, performance = 7.79 GFLOPS
+
+dMMM_cache_block (4, 512, 16): 1.9480501255 sec, performance = 8.82 GFLOPS
+
+dMMM_cache_block (4, 4, 32): 18.3290371085 sec, performance = 0.94 GFLOPS
+
+dMMM_cache_block (4, 128, 32): 2.589305171 sec, performance = 6.63 GFLOPS
+
+dMMM_cache_block (4, 256, 32): 2.2102713485 sec, performance = 7.77 GFLOPS
+
+dMMM_cache_block (4, 512, 32): 1.967966003 sec, performance = 8.73 GFLOPS
+
+dMMM_cache_block (8, 4, 4): 17.113779128 sec, performance = 1.0 GFLOPS
+
+dMMM_cache_block (8, 128, 4): 2.1023347855 sec, performance = 8.17 GFLOPS
+
+dMMM_cache_block (8, 256, 4): 1.729624023 sec, performance = 9.93 GFLOPS
+
+dMMM_cache_block (8, 512, 4): 1.561321522 sec, performance = 11.0 GFLOPS
+
+dMMM_cache_block (8, 4, 8): 15.746053048 sec, performance = 1.09 GFLOPS
+
+dMMM_cache_block (8, 128, 8): 2.0008056265 sec, performance = 8.59 GFLOPS
+
+dMMM_cache_block (8, 256, 8): 1.6589170905 sec, performance = 10.36 GFLOPS
+
+dMMM_cache_block (8, 512, 8): 1.496840209 sec, performance = 11.48 GFLOPS
+
+dMMM_cache_block (8, 4, 16): 13.713950675 sec, performance = 1.25 GFLOPS
+
+dMMM_cache_block (8, 128, 16): 1.8527216305 sec, performance = 9.27 GFLOPS
+
+dMMM_cache_block (8, 256, 16): 1.6360253915 sec, performance = 10.5 GFLOPS
+
+dMMM_cache_block (8, 512, 16): 1.4868200585 sec, performance = 11.55 GFLOPS
+
+dMMM_cache_block (8, 4, 32): 13.3726537135 sec, performance = 1.28 GFLOPS
+
+dMMM_cache_block (8, 128, 32): 1.8772705665 sec, performance = 9.15 GFLOPS
+
+dMMM_cache_block (8, 256, 32): 1.6607308355 sec, performance = 10.34 GFLOPS
+
+dMMM_cache_block (8, 512, 32): 1.523338221 sec, performance = 11.28 GFLOPS
+
+dMMM_cache_block (16, 4, 4): 13.0354127845 sec, performance = 1.32 GFLOPS
+
+dMMM_cache_block (16, 128, 4): 1.708653534 sec, performance = 10.05 GFLOPS
+
+dMMM_cache_block (16, 256, 4): 1.434666842 sec, performance = 11.97 GFLOPS
+
+dMMM_cache_block (16, 512, 4): 1.3415397095 sec, performance = 12.81 GFLOPS
+
+dMMM_cache_block (16, 4, 8): 12.406121655 sec, performance = 1.38 GFLOPS
+
+dMMM_cache_block (16, 128, 8): 1.57112648 sec, performance = 10.93 GFLOPS
+
+dMMM_cache_block (16, 256, 8): 1.3813726015 sec, performance = 12.44 GFLOPS
+
+dMMM_cache_block (16, 512, 8): 1.2698200045 sec, performance = 13.53 GFLOPS
+
+dMMM_cache_block (16, 4, 16): 11.106787722 sec, performance = 1.55 GFLOPS
+
+dMMM_cache_block (16, 128, 16): 1.5008601685 sec, performance = 11.45 GFLOPS
+
+dMMM_cache_block (16, 256, 16): 1.3517688285 sec, performance = 12.71 GFLOPS
+
+dMMM_cache_block (16, 512, 16): 1.2597669145 sec, performance = 13.64 GFLOPS
+
+dMMM_cache_block (16, 4, 32): 11.1271545545 sec, performance = 1.54 GFLOPS
+
+dMMM_cache_block (16, 128, 32): 1.5274215895 sec, performance = 11.25 GFLOPS
+
+dMMM_cache_block (16, 256, 32): 1.382971361 sec, performance = 12.42 GFLOPS
+
+dMMM_cache_block (16, 512, 32): 1.2993633295 sec, performance = 13.22 GFLOPS
+
+dMMM_cache_block (32, 4, 4): 11.258576923 sec, performance = 1.53 GFLOPS
+
+dMMM_cache_block (32, 128, 4): 1.4746017155 sec, performance = 11.65 GFLOPS
+
+dMMM_cache_block (32, 256, 4): 1.2738110935 sec, performance = 13.49 GFLOPS
+
+dMMM_cache_block (32, 512, 4): 1.246749875 sec, performance = 13.78 GFLOPS
+
+dMMM_cache_block (32, 4, 8): 10.8847289885 sec, performance = 1.58 GFLOPS
+
+dMMM_cache_block (32, 128, 8): 1.3509315615 sec, performance = 12.72 GFLOPS
+
+dMMM_cache_block (32, 256, 8): 1.2514889325 sec, performance = 13.73 GFLOPS
+
+dMMM_cache_block (32, 512, 8): 1.1786109195 sec, performance = 14.58 GFLOPS
+
+dMMM_cache_block (32, 4, 16): 9.833134506 sec, performance = 1.75 GFLOPS
+
+dMMM_cache_block (32, 128, 16): 1.3310629235 sec, performance = 12.91 GFLOPS
+
+dMMM_cache_block (32, 256, 16): 1.215080882 sec, performance = 14.14 GFLOPS
+
+dMMM_cache_block (32, 512, 16): 1.151507567 sec, performance = 14.92 GFLOPS
+
+dMMM_cache_block (32, 4, 32): 10.0211925275 sec, performance = 1.71 GFLOPS
+
+dMMM_cache_block (32, 128, 32): 1.357337489 sec, performance = 12.66 GFLOPS
+
+dMMM_cache_block (32, 256, 32): 1.2466455385 sec, performance = 13.78 GFLOPS
+
+dMMM_cache_block (32, 512, 32): 1.1916680285 sec, performance = 14.42 GFLOPS
+
+1311.781623 seconds (1.91 M allocations: 220.777 MiB, 1.61% gc time, 0.15% compilation time)
