@@ -22,7 +22,10 @@
 * FloopsCUDA still used in montecarlo_gpu. Drop it?
 * Check images (e.g. in README.md files)
 * Add reservation to job scripts?
-* ml r ml julia
+* ml r ml julia in job scripts
+
+* julia_1.9_wrapper.sh
+
 
 ## Maybe
 
