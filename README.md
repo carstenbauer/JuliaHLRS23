@@ -48,9 +48,10 @@ cd JuliaHLRS23
 julia install.jl
 ```
 
-**Note:** I might still change some of the workshop materials. To be on the safe side, make sure you update your local instance of the repository right before the start of the workshop. (You can always delete your local copy and redownload/`git pull`.)
-
 **Note:** If you don't have Julia and want a single script to install everything you need (except Jupyter Lab and VS Code), see `orga/local_install.sh`.
+
+**IMPORTANT NOTE:** I might make some last minute changes. To be on the safe side, make sure you update your local instance of the repository right before the start of the workshop. (You can always delete your local copy and redownload or simply `git pull` to update.)
+
 
 <!-- ## Static HTML
 
