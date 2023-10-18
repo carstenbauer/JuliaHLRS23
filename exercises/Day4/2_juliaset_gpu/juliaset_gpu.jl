@@ -6,10 +6,10 @@ using BenchmarkTools
 const MAX_THREADS_PER_BLOCK = CUDA.attribute(device(), CUDA.DEVICE_ATTRIBUTE_MAX_THREADS_PER_BLOCK)
 
 """
-Generic "kernel" function that computes a pixel (`i`, `j`) in the Julia set image
+Computes a pixel (`i`, `j`) in the Julia set image
 (of size `n`x`n`). It return the number of iterations.
 """
-function _kernel(i, j, n; max_iter=255, c=-0.79f0 + 0.15f0 * im)
+function _compute_pixel(i, j, n; max_iter=255, c=-0.79f0 + 0.15f0 * im)
     x = Float32(-2.0 + (j - 1) * 4.0 / (n - 1))
     y = Float32(-2.0 + (i - 1) * 4.0 / (n - 1))
 
@@ -28,37 +28,34 @@ end
 # CPU -----
 function compute_juliaset_cpu(N)
     img = zeros(Int32, N, N)
-    for j in 1:N
-        for i in 1:N
-            iter = _kernel(i, j, N)
-            @inbounds img[i, j] = iter
-        end
-    end
+    #
+    # TODO: loop over the image matrix and compute each pixel by
+    #       calling the `_compute_pixel` function above.
+    #
     return img
 end
 
 # GPU -----
 function _compute_pixel_gpu!(img)
-    # TODO
     i = (blockIdx().x - 1) * blockDim().x + threadIdx().x
     j = (blockIdx().y - 1) * blockDim().y + threadIdx().y
-    n = size(img, 1)
-    if (i ≤ n && j ≤ n)
-        iter = _kernel(i, j, n)
-        @inbounds img[i, j] = iter
-    end
+    #
+    # TODO: Complete this CUDA kernel that should use the function `_compute_pixel` to
+    #       compute a single pixel of the image. The result should be written into the
+    #       correct position of `img`.
+    #
     return nothing
 end
 
 function compute_juliaset_gpu(N)
-    # TODO
     img_gpu = CUDA.zeros(Int32, N, N)
     threads = (isqrt(MAX_THREADS_PER_BLOCK), isqrt(MAX_THREADS_PER_BLOCK))
     blocks = cld.((N, N), threads)
-    CUDA.@sync begin
-        @cuda threads = threads blocks = blocks _compute_pixel_gpu!(img_gpu)
-    end
-    img_cpu = Array(img_gpu)
+    #
+    # TODO: 1. Call the GPU kernel that you've written above.
+    #          (the variables `threads` and `blocks` indicate the launch configuration)
+    #       2. Afterwards, copy the image (`img_gpu`) to the host memory (`img_cpu`).
+    #
     return img_cpu
 end
 
