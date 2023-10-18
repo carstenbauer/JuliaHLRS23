@@ -9,8 +9,8 @@
 cd "$PBS_O_WORKDIR"
 
 # load necessary modules
-# ml r
-# ml julia
+ml r
+ml julia
 
 # run program
 julia --project cache_sizes.jl

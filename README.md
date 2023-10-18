@@ -18,7 +18,7 @@ Last years course: https://github.com/carstenbauer/JuliaHLRS22
 
 ## Tentative schedule
 
-<a href="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule/schedule.pdf"><img src="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule/schedule.png" width=720px></a>
+<a href="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule/schedule.pdf"><img src="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule.png" width=720px></a>
 
 ## Handout
 
@@ -48,9 +48,13 @@ cd JuliaHLRS23
 julia install.jl
 ```
 
-**Note:** If you don't have Julia and want a single script to install everything you need (except Jupyter Lab and VS Code), see `orga/local_install.sh`.
-
 **IMPORTANT NOTE:** I might make some last minute changes. To be on the safe side, make sure you update your local instance of the repository right before the start of the workshop. (You can always delete your local copy and redownload or simply `git pull` to update.)
+
+**Remarks:**
+  * If you don't have Julia and want a single script to install everything you need (except Jupyter Lab and VS Code), see `orga/local_install.sh`.
+  * Because we want the workshop to be as self-contained as possible, we also install dependencies like CUDA and MPI (via Julia's Pkg). The overall size of the installation is therefore expected to be in the ballpark of 5 GB.
+
+
 
 
 <!-- ## Static HTML

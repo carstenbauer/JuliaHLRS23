@@ -1,0 +1,6 @@
+cpu-bind=MASK - n2dgx01, task  0  0 [14053]: mask |BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB|  set
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+CPU and GPU results match: true
+CPU (sequential):	185.57ms
+GPU (incl. transfer):	2.31ms
+GPU (w/o transfer):	471.12μs

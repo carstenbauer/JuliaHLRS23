@@ -1,6 +1,0 @@
-cpu-bind=MASK - gpu-0001, task  0  0 [1611977]: mask |BBBBBBBBBBBBBBBBBBBB||||BBBBBBBBBBBBBBBBBBBB|  set
-Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
-CPU and GPU results match: true
-CPU (sequential):	215.43ms
-GPU (incl. transfer):	4.49ms
-GPU (w/o transfer):	963.04μs

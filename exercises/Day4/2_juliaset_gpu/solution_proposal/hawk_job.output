@@ -1,0 +1,11 @@
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "julia"
+   Try: "module spider julia" to see how to load the module(s).
+
+
+
+CPU and GPU results match: true
+CPU (sequential):	189.68ms
+GPU (incl. transfer):	1.9ms
+GPU (w/o transfer):	296.33μs
