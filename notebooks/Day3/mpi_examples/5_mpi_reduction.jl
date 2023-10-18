@@ -8,7 +8,7 @@ rank = MPI.Comm_rank(comm)
 # local coin tossing
 local_heads_count = count(i -> rand(Bool), 1:10)
 # perform reduction
-total_heads_count = MPI.Reduce(local_heads_count, +, 0, comm)
+total_heads_count = MPI.Reduce(local_heads_count, +, comm)
 
 sleep(0.1*rank); @show local_heads_count
 

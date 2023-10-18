@@ -11,7 +11,6 @@
 
 ## Lectures
 
-* Multithreading
 * Distributed
 * GPU
   - GPU profiling (built-in)
@@ -22,12 +21,16 @@
 * FloopsCUDA still used in montecarlo_gpu. Drop it?
 * Check images (e.g. in README.md files)
 * Add reservation to job scripts?
-* ml r ml julia in job scripts
-
-* julia_1.9_wrapper.sh
 
 
 ## Maybe
 
 * Exercise overview README.md(s)
+
+* Multithreading
+  - lock example
+  - channels
+
+## NO
+
 * MPI exercise: Basic numerical integration with MPI

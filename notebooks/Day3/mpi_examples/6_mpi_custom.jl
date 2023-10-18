@@ -22,7 +22,7 @@ data = [MyType(Float32(rank), rank, SVector{2,Int64}(rank,rank)) for _ in 1:10]
 local_result = reduce(myreducer, data)
 
 # Reduction: passing custom data and custom reducer function to MPI.Reduce
-total_result = MPI.Reduce(local_result, myreducer, 0, comm)
+total_result = MPI.Reduce(local_result, myreducer, comm)
 
 sleep(0.1*rank); @show local_result
 
