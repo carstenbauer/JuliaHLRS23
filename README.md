@@ -18,7 +18,7 @@ Last years course: https://github.com/carstenbauer/JuliaHLRS22
 
 ## Tentative schedule
 
-<a href="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule/schedule.pdf"><img src="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule.png" width=720px></a>
+<a href="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule.pdf"><img src="https://github.com/carstenbauer/JuliaHLRS23/raw/main/orga/schedule.png" width=720px></a>
 
 ## Handout
 
