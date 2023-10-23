@@ -3,7 +3,10 @@ tar -xf v5.2.2.tar.gz
 cd likwid-5.2.2
 cp ../config.mk .
 make PREFIX=$HOME/.local
-make install
+make install PREFIX=$HOME/.local
 cd ..
 rm -rf likwid-5.2.2
 rm v5.2.2.tar.gz
+# bashrc
+echo "export PATH=$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
+echo "export LD_LIBRARY_PATH=$HOME/.local/lib:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
