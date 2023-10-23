@@ -101,3 +101,33 @@ julia --project yourfile.jl # Change filename
 ```
 
 To submit this job to the scheduler use `qsub`, e.g. `qsub hawk_job.qbs`. With `qstat` (or `qstat -rnw`) you can get a list of your scheduled/running jobs.
+
+### VSCode remote on Hawk
+
+#### Connecting
+* `CTRL + SHIFT + P` (opens the popup menu) → `Remote-SSH: Connect to Host...`
+* Input `hlrskXY@hawk.hww.hlrs.de` for the hostname.
+* You need to enter your password.
+
+#### Julia Extension
+
+##### Installing the extension
+
+* Open the extension tab in the sider bar on the left (`CTRL + SHIFT + X`), click on the three dots at the top and select `Install from VSIX...`.
+* Enter the following path and press Enter:
+
+```
+/lustre/hpe/ws10/ws10.1/ws/vtraincb-juliahlrs/vscode/language-julia-1.47.2.vsix
+```
+
+##### Julia wrapper script
+
+To use the Julia extension on Hawk you must point the extension to a Julia wrapper script that first loads the Julia module (i.e. `ml julia`) and then runs Julia. The path to the script is:
+
+```
+/lustre/hpe/ws10/ws10.1/ws/vtraincb-juliahlrs/vscode/julia_vscode_wrapper.sh
+```
+
+To set the relevant setting, press `CTRL + ,` (comma), select the tab (at the top) that says "Hawk" and then search for "julia executable". Finally, copy paste the path above into the text field of the setting.
+
+**Note:** You should only have to do this **once**, as it should remember the setting for the rest of the course.
