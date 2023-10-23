@@ -32,7 +32,7 @@ if length(ARGS) == 1 && ARGS[1] == "full" && Sys.islinux()
     println("\n\n\t -- FULL MODE: Modifying `.bashrc` ...!")
     bashrc = joinpath(ENV["HOME"], ".bashrc")
     if isfile(bashrc)
-        entry = "\nexport PATH=$(joinpath(first(DEPOT_PATH), "bin")):\$PATH"
+        entry = "\nexport PATH=$(joinpath(first(DEPOT_PATH), "bin")):\$PATH\n"
         open(bashrc, "a") do f
             write(f, entry)
         end
