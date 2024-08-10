@@ -38,9 +38,9 @@ mpiexecjl --project -n 4 julia myprogram.jl
 
 (or use the full path `~/.julia/bin/mpiexecjl` if necessary)
 
-## Hawk Cluster
+## HLRS Training Cluster
 
-**Note: There is no proper internet connection on Hawk.**
+**Note: There is no proper internet connection on the cluster 😢**
 
 
 ### Logging in
@@ -48,10 +48,10 @@ mpiexecjl --project -n 4 julia myprogram.jl
 **Note: You should/can not use your private laptop to acces Hawk!**
 
 ```bash
-ssh hlrskXY@hawk.hww.hlrs.de
+ssh accountname@training.hlrs.de
 ```
 
-### Julia on Hawk
+### Julia on the cluster
 
 To make Julia available on Hawk simply type
 
@@ -59,22 +59,18 @@ To make Julia available on Hawk simply type
 ml julia
 ```
 
-We've already instantiated the course environment for you such that all Julia packages are available if you run `julia --project` inside of the course folder (`~/JuliaHLRS23`).
+We've already instantiated the course environment for you such that all Julia packages are available if you run `julia --project` inside of the course folder (`$SCRATCH/JuliaHLRS24`).
 
 ### Interactive compute-node sessions
 
-To get an interactive session on a Hawk compute node run e.g.
+To get an interactive session on a (non-gpu) compute node run e.g.
 ```bash
-qsub -I -l select=1:node_type=rome -l walltime=01:00:00
+qsub -I -l select=1:node_type=skl:mem=3gb:ncpus=1 -l walltime=00:45:00 -q smp
 ```
-or the script `get-cpu-node-interactive.sh` inside your HOME directory.
-Here, `-I` indicates interactive mode and the walltime is set to one hour. If you plan to use **MPI**, use the following to get an interactive session or run `get-cpu-node-interactive-MPI.sh` in your HOME directory.
+Here, `-I` indicates interactive mode and the walltime is set to 45 minutes. If you plan to use **MPI**, use the following to get an interactive session:
 ```bash
-qsub -I -l select=1:node_type=rome:mpiprocs=128 -l walltime=01:00:00
+qsub -I -l select=1:node_type=skl:mem=10gb:ncpus=5:mpiprocs -l walltime=00:45:00 -q smp
 ```
-
-For Thursday and Friday (Days 3 and 4) we have reserved a few Hawk nodes for the course. To use them add `-q R_julia` to the `qsub` commands above.
-
 
 ### Job submission
 
@@ -83,8 +79,7 @@ If you want to submit a non-interactive job, you first need to create a job file
 ```bash
 #!/bin/bash
 #PBS -N myjob # Change to whatever you like
-#PBS -l select=1:node_type=rome
-##PBS -q R_julia # uncomment to use the course reservation
+#PBS -l select=1:node_type=skl:mem=3gb:ncpus=1
 #PBS -l walltime=00:30:00 # 30 minutes - change to whatever necessary.
 #PBS -j oe
 #PBS -o hawk_job.output
@@ -93,7 +88,6 @@ If you want to submit a non-interactive job, you first need to create a job file
 cd "$PBS_O_WORKDIR"
 
 # load necessary modules
-ml r
 ml julia
 
 # run program
@@ -102,11 +96,11 @@ julia --project yourfile.jl # Change filename
 
 To submit this job to the scheduler use `qsub`, e.g. `qsub hawk_job.qbs`. With `qstat` (or `qstat -rnw`) you can get a list of your scheduled/running jobs.
 
-### VSCode remote on Hawk
+### VSCode remote usage
 
 #### Connecting
 * `CTRL + SHIFT + P` (opens the popup menu) → `Remote-SSH: Connect to Host...`
-* Input `hlrskXY@hawk.hww.hlrs.de` for the hostname.
+* Input `accountname@training.hlrs.de` for the hostname.
 * You need to enter your password.
 
 #### Julia Extension
@@ -117,7 +111,7 @@ To submit this job to the scheduler use `qsub`, e.g. `qsub hawk_job.qbs`. With `
 * Enter the following path and press Enter:
 
 ```
-/lustre/hpe/ws10/ws10.1/ws/vtraincb-juliahlrs/vscode/language-julia-1.47.2.vsix
+/shared/training/ws/sca50297-jlhpc/shared/julialang.language-julia-1.104.1.vsix
 ```
 
 ##### Julia wrapper script
@@ -125,9 +119,9 @@ To submit this job to the scheduler use `qsub`, e.g. `qsub hawk_job.qbs`. With `
 To use the Julia extension on Hawk you must point the extension to a Julia wrapper script that first loads the Julia module (i.e. `ml julia`) and then runs Julia. The path to the script is:
 
 ```
-/lustre/hpe/ws10/ws10.1/ws/vtraincb-juliahlrs/vscode/julia_vscode_wrapper.sh
+/shared/training/ws/sca50297-jlhpc/shared/julia_wrapper.sh
 ```
 
-To set the relevant setting, press `CTRL + ,` (comma), select the tab (at the top) that says "Hawk" and then search for "julia executable". Finally, copy paste the path above into the text field of the setting.
+To set the relevant setting, press `CTRL + ,` (comma), select the tab (at the top) that says "training.hlrs.de" and then search for "julia executable". Finally, copy paste the path above into the text field of the setting.
 
 **Note:** You should only have to do this **once**, as it should remember the setting for the rest of the course.
